@@ -1,7 +1,9 @@
 
-# Chris' Weekly Coding Bootcamp In-Class Activities
+# Weekly Coding Bootcamp In-Class Activities
 
 Welcome to the Weekly Coding Bootcamp In-Class Activities repository! This repository contains weekly in-class activities designed to reinforce concepts taught during coding bootcamp sessions. These activities are crafted to provide hands-on practice and solidify understanding of key programming principles and techniques.
+
+![Coding](https://codingbootcamps.io/wp-content/uploads/m15.png)
 
 ## Overview
 
