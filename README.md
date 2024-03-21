@@ -15,7 +15,7 @@ Each week, new activities will be added to this repository, covering a variety o
 -   Web development (HTML, CSS, JavaScript)
 -   Backend development (Node.js, Express)
 -   Database management (SQL, MongoDB)
--   Frameworks and libraries (React, Django, Flask)
+-   Frameworks and libraries (HTML, CSS, Bootstrap, jQuery, React)
 
 ## Structure
 
