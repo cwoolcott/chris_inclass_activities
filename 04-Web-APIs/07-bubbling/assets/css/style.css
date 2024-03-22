@@ -1,0 +1,21 @@
+#wayOutsideContainer {
+    width:800px;
+    height:600px;
+    background-color: purple;
+    margin: 0 auto;
+    padding:10%
+}
+#outsideContainer{
+    width:600px;
+    height:400px;
+    background-color: red;
+    margin: 0 auto;
+    padding:10%
+}
+#insideContainer{
+    width:400px;
+    height:200px;
+    background-color: blue;
+    margin: 0 auto;
+    padding:10%
+}

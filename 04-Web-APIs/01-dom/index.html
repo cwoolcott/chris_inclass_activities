@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <section>Hi!</section>
+        <h1 id="headerOne">Hello!</h1>
+        <div id="firstDiv">
+            <section>
+                This is Great!
+            </section>
+            <section>
+                This is Great2!
+            </section>
+        </div>
+        <div id="secondDiv">Another Div</div>
+
+        <script>
+            let theFirstDiv = document.getElementById("firstDiv"); //Only/1st Instance
+            let theFirstSection = document.querySelector("section"); //1st Instance
+            let allSections = document.querySelectorAll("section"); //Array
+
+
+            theFirstDiv.style.color = "red";
+            theFirstDiv.style.fontSize = "24px";
+            theFirstDiv.style.backgroundColor = "Yellow";
+
+            theFirstSection.style.fontWeight = "bold";
+
+            // for (let aSection of allSections){
+            //     aSection.style.fontStyle = "Italic";
+            // }
+
+
+            // console.log("theFirstDiv", theFirstDiv)
+            // console.log("theFirstDiv2", theFirstDiv2)
+            // console.log("theFirstDiv3", theFirstDiv3)
+
+            // console.log(document.children[0].children[1].children[1]);
+
+            // console.log(theFirstDiv.children[0]);
+
+
+
+            // let carObj = {
+            //     make: "Mazda",
+            //     model: "Rx-7",
+            //     horn: function(){
+            //         this.make = "Toyota";
+            //         console.log(`${this.make} GOES Zoom Zoom!`)
+            //     }
+            // }
+
+    </script>
+    </body>
+</html>

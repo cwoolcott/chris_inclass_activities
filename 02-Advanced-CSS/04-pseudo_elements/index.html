@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            text-decoration: underline;
+            position: relative;
+            cursor: pointer;
+        }
+   
+       #dolor:hover::after {
+        content:"This is a helpful hint!";
+        position: absolute;
+        left:50px;
+        top:20px;
+        border: 1px solid black;
+        width:200px;
+        background-color: yellow;
+       }
+
+       #sit:hover::after {
+        content:"This is the other";
+        position: absolute;
+        left:50px;
+        top:20px;
+        border: 1px solid black;
+        width:200px;
+        background-color: yellow;
+       }
+
+    </style>
+</head>
+<body>
+    <h1>New Text</h1>
+    <div>
+    Lorem ipsum <span id="dolor">dolor</span> sit amet, consectetur adipiscing elit. <br/>
+    Proin eu dignissim mi. Suspendisse vitae urna tincidunt, <br/>
+    dignissim elit eu, pellentesque lacus. <br/>
+    In hac habitasse platea dictumst. Pellentesque at metus luctus, <br/>
+    consectetur lacus sed, congue mi. Sed sodales viverra dapibus. Praesent <br/>
+    faucibus diam eget felis rutrum, vitae ultricies metus auctor. Morbi accumsan vestibulum magna in <br/>
+    vehicula. Nullam maximus ante <span id="sit">sit amet</span> bibendum laoreet.<br/>
+    Donec consectetur quis velit id volutpat. Integer quis sapien sed <br/>
+    urna placerat ultrices vitae sed nulla. Nulla facilisi. Ut venenatis <br/>
+    magna sapien, quis hendrerit magna dignissim non. Ut a euismod lorem, vel tempor lacus. <br/>
+    Vivamus rutrum libero sit amet auctor pellentesque. Phasellus interdum sollicitudin dolor <br/>
+    vel congue. Aenean dapibus convallis mauris, ut posuere <br/>
+    nisl consectetur ac.
+</div>
+    
+</body>
+</html>

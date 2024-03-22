@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .checkbox:checked + label{
+            color:#999;
+            font-style: italic;
+        }
+        .checkbox:checked + label::after{
+            content:"(thanks!)";
+            font-size: .8em;
+            margin-left:10px;
+        }
+
+        .firstName:placeholder-shown{
+            border-style: dotted;
+        }
+       
+        input:focus{
+            border:6px solid black
+        }
+        select {
+                width:300px;
+                appearance: none;
+                background-image: url('arrow.png');
+                background-repeat: no-repeat;
+                background-position: right;
+                background-size: contain;
+            }
+    </style>
+</head>
+<body>
+   <form>
+        <input type="checkbox" class="checkbox">
+        <label>Are you sure?</label>
+        <br/>
+        <input type="text" class="firstName" placeholder="First Name">
+        <br/>
+        <input type="text" class="lastName" placeholder="Last Name">
+        <br/>
+        <input type="text" class="email" placeholder="Email "><br>
+        <br>
+        <select name="favoriteCars">
+            <option>Mazda</option>
+            <option>Toyota</option>
+            <option>Volvo</option>
+            <option>Ford</option>
+        </select>
+   </form>
+</body>
+</html>

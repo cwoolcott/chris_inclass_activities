@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img[src^='ar']::after{
+            content:'📝';
+            border:1px solid red;
+        }
+        div[data-attr*='box2']{
+            border: 5px solid blue;
+        }
+        img[src$='.png']{
+            border: 5px solid rgb(174, 0, 0);
+        }
+        img[src$='.jpg']{
+            border: 5px solid rgb(89, 255, 0);
+        }
+    </style>
+</head>
+<body>
+   <img src="arrow.png">
+   <img src="arrow.jpg">
+   <div data-attr="box1">This is Box 1 </div>
+   <div data-attr="box2">This is Box 2 </div>
+   <div data-attr="box3">This is Box 3 </div>
+   <div data-attr="box4">This is Box 4 </div>
+</body>
+</html>

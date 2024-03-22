@@ -1,0 +1,24 @@
+section{
+    display:flex;
+    flex-wrap: wrap;
+    border:1px solid blue;
+    max-width:1000px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+article {
+    width:300px;
+    height:300px;
+    border:1px solid red;
+    margin:10px
+}
+article div {
+    text-align: center;
+    margin: 0 auto;
+    width:150px;
+    border:2px solid blue;
+    margin-top: -10px;
+    background-color: white;
+}

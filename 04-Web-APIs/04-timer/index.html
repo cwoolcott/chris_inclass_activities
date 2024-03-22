@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <script>
+
+        const timerEl = document.querySelector("div");
+
+        function someFunction(){
+	        alert("It's been 5 seconds!");
+        }
+
+        function turnBackgroundBlack(){
+            document.querySelector("body").setAttribute("style", "background-color:black")
+        }
+
+        //var windowTimeout = setTimeout(someFunction, 5000);
+
+        // function addHtml(){
+	    //     const someDiv = document.createElement("div");
+        //     someDiv.textContent = Date.now();
+        //     document.querySelector("body").append(someDiv);
+        // }
+        let someTypeofTimer = 5
+        timerEl.textContent = someTypeofTimer;
+
+        var windowTimeout = setInterval(function(){
+            someTypeofTimer--;
+            timerEl.textContent = someTypeofTimer;
+            if (someTypeofTimer < 1){
+                timerEl.textContent = "DONE!";
+                turnBackgroundBlack();
+                clearInterval(windowTimeout);
+            }
+
+        }, 1000);
+
+
+        //clearTimeout(windowTimeout);
+
+    </script>
+</body>
+</html>
