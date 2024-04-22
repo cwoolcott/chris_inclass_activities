@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>
+
+    </h1>
+    <img>
+    <ul>
+
+    </ul>
+
+    <div id="newpage" style="width:200px; height:200px; border:1px solid red">GOTO NEW PAGE</div>
+
+    <script>
+        const newpageEl = document.querySelector("#newpage");
+        const titleEl = document.querySelector("h1");
+        const imageEl = document.querySelector("img");
+        const ratingsEl = document.querySelector("ul");
+        //const url = "https://api.github.com/users";
+        const url = "https://www.omdbapi.com/?t=Star Wars&apikey=9fa6058b";
+        console.log("STEP 0");
+
+        function displayMovie(dataFromApi){
+            titleEl.textContent = dataFromApi.Title;
+            imageEl.setAttribute("src", dataFromApi.Poster);
+
+            for (ratings of dataFromApi.Ratings){
+                const ratingEl = document.createElement("li");
+                ratingEl.textContent = ratings.Source + " : " + ratings.Value;
+                ratingsEl.append(ratingEl)
+            }
+            
+        }
+
+        fetch(url, {
+            cache: "reload"
+        })
+        //Is the response there and get it ready
+        .then(function(response){
+
+            if (response.status !== 200){
+                document.location.replace("404.html")
+            }
+            console.log("STEP 1")
+            return response.json();
+        })
+        // Get the Data
+        .then(function(data){
+            console.log("STEP 2")
+            console.log("data", data)
+            displayMovie(data)
+
+        });
+
+        console.log("STEP 3")
+        
+        newpageEl.addEventListener("click", function(){
+            document.location.href = "https://google.com";
+        })
+    </script>
+</body>
+</html>

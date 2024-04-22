@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- $ is undefined! if this isn't here -->
+    <style>
+        section {
+            font-size:24px;
+            color:blueviolet
+        }
+    </style>
+</head>
+<body>
+    
+    <section id="movieTitle"></section>
+    <img id="movieImage">
+    <script>
+
+    $(function() {
+        console.log( "ready!" );
+
+        var url = "https://www.omdbapi.com/?i=tt0108358&apikey=9fa6058b";  
+
+        function displayData(data){
+            $("#movieTitle").text(data.Title);
+            $("#movieImage").attr("src", data.Poster);
+        }
+
+
+
+        fetch(url)
+        .then(function(response){
+            //gets response ready
+            return response.json();
+        })
+        .then(function(data){ 
+
+            displayData(data);
+        
+        });
+
+    });
+
+
+  
+
+
+    </script>
+</body>
+</html>

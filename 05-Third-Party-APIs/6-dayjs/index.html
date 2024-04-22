@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1></h1>
+    <h2></h2>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+   
+   <script>
+        const h1el = document.querySelector("h1");
+        const h2el = document.querySelector("h2");
+
+        h1el.textContent = dayjs().format("dddd DD/MM/YYYY hh:mm:ss a");
+        
+        window.setInterval(function(){
+            h1el.textContent = dayjs().format("dddd DD/MM/YYYY hh:mm:ss a");
+        }, 1000);
+
+
+        const date1 = dayjs()
+        const date2 = dayjs('2024-03-25')
+        const dateDiff = date1.diff(date2, "day") // 20214000000 default milliseconds
+        
+        h2el.textContent = dateDiff + " Days Difference";
+    </script>
+</body>
+</html>
