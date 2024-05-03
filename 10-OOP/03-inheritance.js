@@ -39,19 +39,22 @@ class Kitten extends Cat {
     scratch(){
         console.log("Scratches FUrniture!")
     }
+    displayAnimalInfo(food){
+        console.log(`This is a Kitten and ${this.name} says ${this.noise}, he/she also has ${this.legs} legs and ${this.tailString}. EATS ${food}`)
+    }
 }
 
-const mrPants = new Cat("Mr. Pants", "Meow!");
+// const mrPants = new Cat("Mr. Pants", "Meow!");
 
-mrPants.displayAnimalInfo();
-mrPants.purr();
+// mrPants.displayAnimalInfo();
+// mrPants.purr();
 
-const shinySides = new Fish("Lt. Shiny Sides");
+// const shinySides = new Fish("Lt. Shiny Sides");
 
-shinySides.displayAnimalInfo();
+// shinySides.displayAnimalInfo();
 
 const nermal = new Kitten("Nermal", "little meow");
 
-nermal.displayAnimalInfo();
+nermal.displayAnimalInfo("Cat Food");
 nermal.purr();
 nermal.scratch();
