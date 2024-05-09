@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "year": 2018,
+        "make" : "Bugatti",
+        "model": "Chiron",
+        "sold": false
+    },
+    {
+        "id": 2,
+        "year": 2001,
+        "make" : "Ferrari",
+        "model": "Modena",
+        "sold": true
+    },
+    {
+        "id": 4,
+        "year": 1993,
+        "make" : "Mazda",
+        "model": "Rx-7",
+        "sold": true
+    }
+]

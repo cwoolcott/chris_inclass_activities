@@ -1,0 +1,27 @@
+[
+    {
+        "bookId":1,
+        "title": "Lord of the Rings",
+        "author": "JR Tolkien"
+    },
+    {
+        "bookId":2,
+        "title": "The Alchemists",
+        "author": "Paulo Coelho"
+    },
+    {
+        "bookId":3,
+        "title": "Ready Player One",
+        "author": "Ernest Cline"
+    },
+    {
+        "bookId":4,
+        "title": "The Witcher",
+        "author": "Andrjez"
+    },
+    {
+        "bookId":5,
+        "title": "The Raven",
+        "author": "Poe"
+    }
+]
