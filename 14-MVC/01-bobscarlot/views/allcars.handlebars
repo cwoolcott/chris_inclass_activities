@@ -1,0 +1,7 @@
+<h2>All Cars from {{dealerName}}!</h2>
+{{!-- http://localhost:3001/cars/Rx-7 --}}
+<div>
+    {{#each carsArray}}
+        {{> carlisting dealer=../dealerName}}
+    {{/each}}
+</div>
