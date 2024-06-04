@@ -1,4 +1,10 @@
 <h2>All Cars from {{dealerName}}!</h2>
+{{#if firstName}}
+HI THERE {{firstName}}!
+{{else}}
+Sign Up for a personalized experience: <a href="/register">Register</a>
+{{/if}}
+<br><br>
 {{!-- http://localhost:3001/cars/Rx-7 --}}
 <div>
     {{#each carsArray}}
