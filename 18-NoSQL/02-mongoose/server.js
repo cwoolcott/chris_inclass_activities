@@ -25,12 +25,12 @@ db.once('open', () => {
 
 // Sample route
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+  res.send('Bobs Cars!');
 });
 
 // Import routes
-const sampleRoutes = require('./routes/car');
-app.use('/api/car', sampleRoutes);
+const carRoutes = require('./routes/car');
+app.use('/api/car', carRoutes);
 
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
