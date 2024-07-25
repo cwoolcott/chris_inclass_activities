@@ -1,13 +1,7 @@
 const mongoose = require('mongoose');
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/cafe-db",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-  }
+  process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/cafe-db"
 );
 
 module.exports = mongoose.connection;

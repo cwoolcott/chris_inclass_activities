@@ -1,6 +1,5 @@
-const { gql } = require('apollo-server-express');
 
-const typeDefs = gql`
+const typeDefs = `
 
 type MenuItems {
     _id: ID
@@ -39,7 +38,7 @@ type MenuItems {
 
   type Mutation {
     addOrder(email: String!, menuItems: [String]!): Order
-    updateNotificationOrder(id: ID!) : Order
+    updateNotificationOrder(id: ID!, notified: Boolean!) : Order
     deleteOrder(id: ID!) : Order
   }
 `;

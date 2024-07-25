@@ -21,7 +21,8 @@ const resolvers = {
       return orders
 
     },
-    orderById: async (parent, { id }) => {
+    orderById: async (_, {id}) => {
+     // const id = args.id;
       let orderSummary = await Order.findById(id).populate('menuItems').populate({
         path: 'menuItems',
         populate: 'taxCategory'
@@ -91,10 +92,10 @@ const resolvers = {
 
       return orderSummary;
     },
-    updateNotificationOrder: async (parent, { id }) => {
-      return await Order.findOneAndUpdate(
+    updateNotificationOrder: async (parent, { id, notified }) => {
+      return await Order.findByIdAndUpdate(
         { _id: id },
-        { notified: true },
+        { notified },
         { new: true }
       );
     },
