@@ -7,6 +7,7 @@ const typeDefs = `
         make: String
         model: String
         sold: Boolean
+        image: String
         year: String
         price: Int
     }
@@ -20,7 +21,8 @@ const typeDefs = `
 
     #Mutation
     type Mutation {
-        addCar(id: Int!, make: String!, model: String!, price: Int!, image: String, sold: Boolean! ): Cars
+        addCar(id: Int!, year: String!, make: String!, model: String!, price: Int!, image: String, sold: Boolean! ): Cars
+        editCar(id: Int!, year: String!, make: String!, model: String!, price: Int!, image: String, sold: Boolean! ): Cars
     }
 `;
 
