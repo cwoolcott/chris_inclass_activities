@@ -18,12 +18,14 @@ function AddCar() {
       });
       const [status, setStatus] = useState();
 
-      const [addCar, { error }] = useMutation(ADD_CAR, {
-        refetchQueries: [
-            CAR_LIST,
-          'allCars'
-        ]
-      });
+      const [addCar, { error }] = useMutation(ADD_CAR
+      //  , {
+      //   refetchQueries: [
+      //       CAR_LIST,
+      //     'allCars'
+      //   ]
+      // }
+    );
 
       const handleChange = (e) => {
         const { name, value } = e.target;

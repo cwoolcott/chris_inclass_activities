@@ -5,7 +5,7 @@ import { CAR_LIST } from "../utils/queries"
 
 function CarList() {
 
-const {loading, data} = useQuery(CAR_LIST);
+const {loading, data } = useQuery(CAR_LIST, {fetchPolicy: "no-cache"});
 
 const cars = data?.allCars || [];
 
