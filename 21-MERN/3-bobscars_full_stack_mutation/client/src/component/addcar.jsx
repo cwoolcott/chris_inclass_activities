@@ -14,7 +14,7 @@ function AddCar() {
         carMake: '',
         carModel: '',
         carPrice: '',
-        carSold: 'no',
+        carSold: 'yes',
       });
       const [status, setStatus] = useState();
 
