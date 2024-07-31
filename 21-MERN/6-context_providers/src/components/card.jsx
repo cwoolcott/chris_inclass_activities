@@ -1,12 +1,12 @@
 
 import Button from './button'
 
-function Card(props) {
+function Card() {
 
   
     return (
       <>
-        <Button {...props} />
+        <Button /> 
       </>
     )
   }
